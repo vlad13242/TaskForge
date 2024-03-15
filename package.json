@@ -1,10 +1,10 @@
 {
-  "name": "dis-edu",
-  "version": "2.1.0",
+  "name": "f-ogoog/db-course-lab6",
+  "version": "1.1.0",
   "main": "index.js",
-  "description": "Databases course work template",
-  "repository": "https://github.com/boldak/dis-edu",
-  "author": "Andrey Boldak <boldak.andrey@gmail.com>",
+  "description": "Databases course work template for group in IO-21",
+  "repository": "https://github.com/f-ogoog/db-course-lab6",
+  "author": "Іван Маркелов, Любченко Анна, Пресняков Артем, Леся Озимай, Сребнюк Катерина, Хіночек Владислав, Тишнюк Іван, Олец Цуря",
   "license": "ECL 2.0",
   "scripts": {
     "docs:dev": "npx vuepress dev docs",
