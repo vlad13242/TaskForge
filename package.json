@@ -1,10 +1,10 @@
 {
-  "name": "f-ogoog/db-course-lab6",
+  "name": "f-ogoog/TaskForge",
   "version": "1.1.0",
   "main": "index.js",
   "description": "Databases course work template for group in IO-21",
-  "repository": "https://github.com/f-ogoog/db-course-lab6",
-  "author": "Іван Маркелов, Любченко Анна, Пресняков Артем, Леся Озимай, Сребнюк Катерина, Хіночек Владислав, Тишнюк Іван, Олец Цуря",
+  "repository": "https://github.com/f-ogoog/TaskForge",
+  "author": "Іван Маркелов, Анна Любченко, Артем Пресняков, Леся Озимай, Катерина Сребнюк, Владислав Хіночек, Іван Тишнюк, Олец Цуря",
   "license": "ECL 2.0",
   "scripts": {
     "docs:dev": "npx vuepress dev docs",
