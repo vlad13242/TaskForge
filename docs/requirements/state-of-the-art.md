@@ -245,15 +245,26 @@ Agile метод робить акцент на тісній співпраці 
 
 ## Посилання
 
-1. [Система управління проєктами](https://pmb.com.ua/uk/slovar-terminov/sistema-upravleniya-proektom-project-management-system-instrument/)
-2.[Проєкт](https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%94%D0%BA%D1%82)
-3.[Модель Waterfall](https://uk.itpedia.nl/2017/09/13/project-management-volgens-de-waterval-methode/)
-4.[Гнучка модель](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
-5.[Ітеративна модель](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
-6.[Спіральна модель (Spiral model)](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
-7.[Jira](https://www.atlassian.com/ru/software/jira)
-8.[Worksection](https://worksection.com/ua/ )
-9.[Asana](https://software.fish/project-management-software/best-project-management-software)
-10.[Trello](https://trello.com/uk)
-11.[Monday.com](https://monday.com/lang/)
-12.[ClickUp](https://clickup.com/)
+1)[Система управління проєктами](https://pmb.com.ua/uk/slovar-terminov/sistema-upravleniya-proektom-project-management-system-instrument/)
+   
+2)[Проєкт](https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%94%D0%BA%D1%82)
+
+3)[Модель Waterfall](https://uk.itpedia.nl/2017/09/13/project-management-volgens-de-waterval-methode/)
+
+4)[Гнучка модель](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
+
+5)[Ітеративна модель](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
+
+6)[Спіральна модель (Spiral model)](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
+
+7)[Jira](https://www.atlassian.com/ru/software/jira)
+
+8)[Worksection](https://worksection.com/ua/ )
+
+9)[Asana](https://software.fish/project-management-software/best-project-management-software)
+
+10)[Trello](https://trello.com/uk)
+
+11)[Monday.com](https://monday.com/lang/)
+
+12)[ClickUp](https://clickup.com/)
