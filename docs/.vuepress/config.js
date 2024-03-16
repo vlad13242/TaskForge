@@ -7,7 +7,6 @@ module.exports = {
       serviceWorker: true,
       updatePopup: true
     },
-    ,
     ['container', {
       type: 'vue',
       before: '<pre class="vue-container"><code>',
@@ -95,8 +94,8 @@ module.exports = {
     // editLinkText: 'Ви можете покращити цю сторінку'
 
   },
-  title: 'Назва проєкту',
-  description: 'Курсова робота з дисципліни "Бази даних"',
+  title: 'Система управління проєктами TaskForge',
+  description: 'Лабораторні роботи з дисципліни "Бази даних"',
   configureWebpack: {
     resolve: {
       alias: {
