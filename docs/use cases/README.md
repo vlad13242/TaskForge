@@ -31,9 +31,9 @@
     actor "Менеджер" as Manager
 
     usecase "<b>ProjectManage</b>\nКерувати проектом" as ProjectManage
-    usecase "<b>TaskManage</b>\nКерувати спринтом" as TaskManage
+    usecase "<b>TaskManage</b>\nКерувати задачами" as TaskManage
     usecase "<b>TeamManage</b>\nКерувати командою" as TeamManage
-    usecase "<b>TemplateManage</b>\nКерувати командою" as TemplateManage
+    usecase "<b>TemplateManage</b>\nКерувати шаблонами" as TemplateManage
 
 
     Manager -> ProjectManage
@@ -62,11 +62,11 @@
 
     actor "Користувач" as User
 
-    usecase "<b>UserSignUp</b>\nРеєстрація" as UserSignUp
-    usecase "<b>UserSignIn</b>\nРеєстрація користувача" as UserSignIn
+    usecase "<b>UserSignUp</b>\nЗареєструватися" as UserSignUp
+    usecase "<b>UserSignIn</b>\nУвійти в систему" as UserSignIn
     usecase "<b>UserUpdate</b>\nРедагувати дані користувача" as UserUpdate
-    usecase "<b>UserDelete</b>\nКерувати завданнями" as UserDelete
-    usecase "<b>Support</b>\nКоментувати завдання" as Support
+    usecase "<b>UserDelete</b>\nВидалити користувача" as UserDelete
+    usecase "<b>Support</b>\nЗв'язок з службою підтримки" as Support
 
     User -l-> UserSignUp
     User -r-> UserSignIn
@@ -108,7 +108,7 @@
     usecase "<b>ProjectDelete</b>\nВидалити проєкту" as ProjectDelete
     usecase "<b>TeamManage</b>\nКерувати командою" as TeamManage
     usecase "<b>UserAdd</b>\nДодати користувача до команди" as UserAdd
-    usecase "<b>DeleteUser</b>\Видалення користувача з проєкту" as DeleteUser
+    usecase "<b>DeleteUser</b>\nВидалення користувача з проєкту" as DeleteUser
     usecase "<b>TaskManage</b>\nКерувати задачами" as TaskManage
     usecase "<b>TaskAdd</b>\nДодавання задачі в проєкт" as TaskAdd
     usecase "<b>TaskUpdate</b>\nРедагування задачі в проєкті" as TaskUpdate
