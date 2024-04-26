@@ -200,15 +200,19 @@
     :Менеджер/користувач заповнює поля у формі для реєстрації;
     :Менеджер/користувач натискає на кнопку "Створити";
     |Система|
-    :Система перевіряє введені дані
-    <font color="red">SignUpException_InvalidData</font>
-    <font color="red">SignUpException_AccAlreadyExist</font>
-    <font color="red">SignUpException_InvalidEmail</font>;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> SignUpException_InvalidData
+    <b> SignUpException_AccAlreadyExist
+    <b> SignUpException_InvalidEmail
+    end note
     :Система створює новий обліковий запис;
     |Користувач|
     stop;
 
 @enduml
+
 
 ### UserSignIn
 
@@ -265,10 +269,13 @@
     :Натискає кнопку "Увійти";
     
     |Система|
-    :Система перевіряє введені дані
-    <font color="red">**SignInException_InvalidData**
-    <font color="red">**SignInException_AccDoesn`tExist**
-    <font color="red">**SignInException_InvalidPassword`tExist**;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> SignInException_InvalidData
+    <b> SignInException_AccDoesn
+    <b> SignInException_InvalidPassword
+    end note
     :Система автентифікує менеджера/користувача;
     
     |Менеджер/користувач|
@@ -358,8 +365,11 @@
     |Менеджер/користувач|
     :Менеджер/користувач вводить пароль і натискає кнопку "Видалити";
     |Система|
-    :Система перевіряє введені дані
-    <font color="red"><b>UserDeleteException_InvalidPassword;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> UserDeleteException_InvalidPassword
+    end note
     :Система видаляє обліковий запис;
     |Менеджер/користувач|
     stop;
@@ -409,8 +419,11 @@
     |Менеджер|
     :Менеджер заповнює форму та натискає кнопку "Створити";
     |Система|
-    :Система перевіряє введені дані
-    <font color="red"><b> ProjectCreate_InvalidData;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> ProjectCreate_InvalidData
+    end note
     :Система створює новий проєкт;
     |Менеджер|
     stop;
@@ -462,9 +475,12 @@
     |Менеджер|
     :Менеджер заповнює форму та натискає кнопку "Редагувати";
     |Система|
-    :Система перевіряє введені дані
-    <font color="red"><b> ProjectUpdateException_InvalidData
-    <font color="red"><b> ProjectUpdateException_Unauthorized;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> ProjectUpdateException_InvalidData
+    <b> ProjectUpdateException_Unauthorized
+    end note
     :Система зберігає зміни в проєкті;
     |Менеджер|
     stop;
@@ -511,8 +527,11 @@
     :Менеджер обирає проєкт у розділі "Проєкти";
     :Менеджер натискає кнопку "Видалити проєкт";
     |Система|
-    :Система перевіряє права менеджера
-    <font color="red"><b> ProjectDeleteException_Unauthorized;
+    :Система перевіряє права менеджера;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> ProjectDeleteException_Unauthorized
+    end note
     :Система питає чи точно менеджер бажає видалити проєкт;
     |Менеджер|
     :Менеджер натискає кнопку "Видалити";
@@ -568,9 +587,12 @@
     |Менеджер|
     : Менеджер заповнює поле та натискає кнопку "Додати";
     |Система|
-    :Система перевіряє введені дані
-    <font color="red"><b>UserAddException_InvalidData
-    <font color="red"><b>UserAddException_Unauthorized;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> UserAddException_InvalidData
+    <b> UserAddException_Unauthorized
+    end note
     :Система додає нового користувача;
     |Менеджер|
     stop;
@@ -637,9 +659,12 @@
     |Менеджер|
     :Менеджер натискає кнопку "Видалити";
     |Система|
-    :Система перевіряє введені дані
-    <font color="red"><b> UserDeleteException_InvalidData
-    <font color="red"><b> UserDeleteException_Unauthorized;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> UserDeleteException_InvalidData
+    <b> UserDeleteException_Unauthorized
+    end note
     :Система видаляє користувача з проєкту;
     |Менеджер|
     stop;
@@ -692,9 +717,12 @@
     |Менеджер|
     :Менеджер заповнює форму та натискає кнопку "Додати";
     |Система|
-    :Система перевіряє введені дані
-    <font color="red"><b> TaskAddException_InvalidData
-    <font color="red"><b> TaskAddException_Unauthorized;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> TaskAddException_InvalidData
+    <b> TaskAddException_Unauthorized
+    end note
     :Система додає задачу в проєкт;
     |Менеджер|
     stop;
@@ -765,9 +793,12 @@
     :Заповнює форму та натискає кнопку "Зберегти";
     
     |Система|
-    :Система перевіряє введені дані
-    <font color="red">**TaskUpdateException_InvalidData**
-    <font color="red">**TaskUpdateException_Unauthorized**;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> TaskUpdateException_InvalidData
+    <b> TaskUpdateException_Unauthorized
+    end note
     :Система змінює задачу;
 
     |Менеджер|
@@ -838,8 +869,11 @@
     :Натискає кнопку "Видалити";
     
     |Система|
-    :Система перевіряє права доступу
-    <font color="red">**TaskDeleteException_Unauthorized**;
+    :Система перевіряє права доступу;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> TaskDeleteException_Unauthorized
+    end note
     :Система видаляє задачу;
 
     |Менеджер|
@@ -905,8 +939,11 @@
     :Заповнює форму та натискає кнопку "Створити";
     
     |Система|
-    :Система перевіряє введені дані
-    <font color="red">**TemplateAddException_InvalidData**;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> TemplateAddException_InvalidData
+    end note
     :Система створює шаблон;
 
     |Менеджер|
@@ -976,9 +1013,12 @@
     :Заповнює форму та натискає кнопку "Зберегти";
     
     |Система|
-    :Система перевіряє введені дані
-    <font color="red">**TemplateUpdateException_InvalidData**
-    <font color="red">**TemplateUpdateException_Unauthorized**;
+    :Система перевіряє введені дані;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> TemplateUpdateException_InvalidData
+    <b> TemplateUpdateException_Unauthorized
+    end note
     :Система змінює шаблон;
 
     |Менеджер|
@@ -1042,8 +1082,11 @@
     :Натискає кнопку "Застосувати шаблон";
     
     |Система|
-    :Система перевіряє права менеджера
-    <font color="red">**TemplateApplyException_Unauthorized**;
+    :Система перевіряє права менеджера;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> TemplateApplyException_Unauthorized
+    end note
     :Система відкриває вікно з розділом "Шаблони";
 
     |Менеджер|
@@ -1112,8 +1155,11 @@
     :Натискає кнопку "Видалити";
     
     |Система|
-    :Система перевіряє права менеджера
-    <font color="red">**TemplateApplyException_Unauthorized**;
+    :Система перевіряє права менеджера;
+    note right #ffaaaa
+    <b> Можливі помилки:
+    <b> TemplateApplyException_Unauthorized
+    end note
     :Система запитує менеджера чи точно він хоче видалити шаблон;
 
     |Менеджер|
