@@ -1,3 +1,6 @@
+# Проєктування бази даних
+
+## Модель бізнес-об'єктів
 @startuml
 
       entity Users #ADD8E6
@@ -14,6 +17,9 @@
       entity Members #ADD8E6
       
       entity Developers #ADD8E6
+      entity Developers.ID #ffffff
+      entity Developers.name #ffffff
+      entity Developers.status #ffffff
       
       entity Project #ADD8E6
       entity Project.ID #ffffff
@@ -45,6 +51,10 @@
       Task.name --d-* Task
       Task.price --d-* Task
 
+      Developers.ID --d-* Developers
+      Developers.name --d-* Developers
+      Developers.status --d-* Developers
+
       Role.name --d-* Role
       Role.ID --d-* Role
 
@@ -56,3 +66,83 @@
       Role "1,1" --u-"1,1" Members
 
 @enduml
+
+# ER-модель
+@startuml
+
+    namespace UserProfile {
+        entity Users {
+            ID: UUID
+            USERNAME: TEXT
+            PASSWORD: VARCHAR
+            FULLNAME: TEXT
+            EMAIL: TEXT
+        }
+    }
+
+    namespace ProjectManagement {
+        entity Projects {
+            ID: UUID
+            name: TEXT
+            description: TEXT
+            status: TEXT
+        }
+
+        entity Tasks {
+            ID: UUID
+            name: TEXT
+            description: TEXT
+            status: TEXT
+            developer: TEXT
+            price: TEXT
+        }
+
+        entity Developers {
+            ID: UUID
+            Name: TEXT
+            Status: TEXT
+            }
+    }
+
+    namespace AccessPolicy {
+        entity Members {
+            ID: UUID
+        }
+
+        entity Roles {
+            ID: UUID
+            Name: TEXT
+        }
+    }
+
+Developers "1..*" --- "1..*" Users
+Tasks "1..*" --- "0..*" Developers
+Roles "1" --- "1" Members
+Users "1..*" --> "0..*" Members
+Projects "1..1" --- "1..*" Members
+Projects "1" <-- "1..*" Tasks
+
+@enduml
+
+## Опис ER-моделі
+
+### Roles (Ролі у проекті)
+Представляє собою ролі, які може приймати користувач у певному проекті.
+- ID: BINARY - унікальний код користувача у проекті
+- Name: VARCHAR - назва ролі
+
+### Members (Підписники проекта)
+Представляє собою базу з ID користувачів, які підв'язані до проекту.
+- ID: BINARY - унікальний код користувача
+
+### Users (Користувачі)
+Представляє собою користувача з його атрибутами.
+- ID: BINARY - унікальний код користувача
+- Username: VARCHAR - логін користувача
+- Password: VARCHAR - пароль користувача
+- Fullname: VARCHAR - справжнє ім'я користувача
+- Email: VARCHAR - поштова скринька користувача  
+
+
+
+
