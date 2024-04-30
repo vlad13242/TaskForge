@@ -142,3 +142,25 @@ Projects "1" <-- "1..*" Tasks
 - Password: VARCHAR - пароль користувача
 - Fullname: VARCHAR - справжнє ім'я користувача
 - Email: VARCHAR - поштова скринька користувача
+
+### Projects (Проєкти)
+Власне представляє собою проєкт, над яким працює команда. Має поля:
+- ID: BINARY - унікальний код
+- Name: VARCHAR - ім'я проєкту
+- description: VARCHAR - опис проєкту
+- status: VARCHAR - статус проєкту
+
+### Task (Завдання)
+Представляє собою завдання. Має поля:
+- ID: BINARY - унікальний код
+- Name: VARCHAR - назва завдання
+- Description: VARCHAR - опис завдання
+- Status: VARCHAR - статус завдання
+- Developer: VARCHAR - ім'я розробника, який виконує завдання
+- Price: VARCHAR - ціна виконання завдання
+
+### Developers (Розробники)
+Developers - це сутність-асоціація, яка зберігає учасників, які працюють над проєктом.\
+- ID: BINARY - унікальний код
+- Name: VARCHAR - ім'я розробника
+- Status: VARCHAR - статус розробника
