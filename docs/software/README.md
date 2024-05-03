@@ -5,9 +5,9 @@
 
 ```sql
 -- CreateEnum
-CREATE TYPE "tast_status" AS ENUM ('completed', 'in progress');
+CREATE TYPE "task_status" AS ENUM ('completed', 'in_progress');
 
-CREATE TYPE "project_status" AS ENUM ('completed', 'in progress');
+CREATE TYPE "project_status" AS ENUM ('completed', 'in_progress');
 
 CREATE TYPE "developer_status" AS ENUM ('online', 'offline');
 
@@ -27,7 +27,7 @@ CREATE TABLE "task" (
     "id" SERIAL NOT NULL,
     "project_id" INTEGER NOT NULL,
     "description" VARCHAR(200) NOT NULL,
-    "status" "tast_status" NOT NULL,
+    "status" "task_status" NOT NULL,
     "name" VARCHAR(50) NOT NULL,
     "price" VARCHAR(50) NOT NULL,
 
