@@ -58,11 +58,11 @@
       Role.name --d-* Role
       Role.ID --d-* Role
 
-      Users "1,*" --u-"0,*" Members
-      Members "1,*" --u-"1,*" Project
+      Users "1,1" --u-"0,*" Members
+      Members "1,*" --u-"1,1" Project
       Project "1,1" --u-"0,*" Task
       Task "1,*" --u-"0,*" Developers
-      Developers "0,*" --u-"1,*" Users
+      Developers "0,*" --u-"1,1" Users
       Role "1,1" --u-"1,1" Members
 
 @enduml
@@ -115,11 +115,11 @@
         }
     }
 
-Developers "1..*" --- "1..*" Users
+Developers "0..*" --- "1*" Users
 Tasks "1..*" --- "0..*" Developers
 Roles "1" --- "1" Members
-Users "1..*" --- "0..*" Members
-Projects "1..*" --- "1..*" Members
+Users "1" --- "0..*" Members
+Projects "1*" --- "1..*" Members
 Projects "1" --- "0..*" Tasks
 
 @enduml
