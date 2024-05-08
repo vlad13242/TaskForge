@@ -119,7 +119,7 @@ Developers "0..*" --- "1*" Users
 Tasks "1..*" --- "0..*" Developers
 Roles "1" --- "1" Members
 Users "1" --- "0..*" Members
-Projects "1*" --- "1..*" Members
+Projects "1" --- "1..*" Members
 Projects "1" --- "0..*" Tasks
 
 @enduml
