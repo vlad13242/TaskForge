@@ -38,7 +38,6 @@ CREATE TABLE "task" (
 CREATE TABLE "project"(
     "id" SERIAL NOT NULL,
     "name" VARCHAR(50) NOT NULL,
-    "developers" VARCHAR(250) NOT NULL,
     "status" "project_status" NOT NULL,
 
     CONSTRAINT "project_pkey" PRIMARY KEY ("id")

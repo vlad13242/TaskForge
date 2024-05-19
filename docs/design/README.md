@@ -42,7 +42,6 @@
        
       Project.ID --d-* Project
       Project.name --d-* Project
-      Project.developers --d-* Project
       Project.status --d-* Project
       
       Task.description --d-* Task
