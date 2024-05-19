@@ -59,11 +59,11 @@
       Role.ID --d-* Role
 
       Users "1,1" --u-"0,*" Members
-      Members "1,*" --u-"1,1" Project
+      Members "0,*" --u-"1,1" Project
       Project "1,1" --u-"0,*" Task
       Task "1,*" --u-"0,*" Developers
       Developers "0,*" --u-"1,1" Users
-      Role "1,1" --u-"1,1" Members
+      Role "1,1" --u-"0,*" Members
 
 @enduml
 
