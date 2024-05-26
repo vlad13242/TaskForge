@@ -18,7 +18,7 @@ footer: "ECL 2.0 Licensed | Copyright © 2024 Tyshniuk Ivan"
 =======
 *студент 2-го курсу, групи ІО-21* 
 
-- <span padding-right:5em></span> **Хіночек Владислав** <a href="https://t.me/vlad_Programmer" target="_blank"> Telegram </a>
+- <span padding-right:5em></span> **Хіночек  Владислав** <a href="https://t.me/vlad_Programmer" target="_blank"> Telegram </a>
 
 >>>>>>> 32856d7 (z)
 
